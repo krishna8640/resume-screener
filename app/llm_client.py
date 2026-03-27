@@ -17,7 +17,7 @@ def safe_json_parse(text):
 
 def analyze_resume(prompt):
     response = client.chat.completions.create(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2,
     )
